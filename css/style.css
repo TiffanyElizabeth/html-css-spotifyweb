@@ -19,6 +19,15 @@
     height: 100%;
 }
 
+footer {
+    background-color: lavender;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
 
 /*----------------
     LAYOUT - RESPONSIVE
