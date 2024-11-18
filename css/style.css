@@ -332,11 +332,83 @@ footer {
 .footer-col {
     background-color: blue;
     width: calc(100%/4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer-big-col {
     background-color: blueviolet;
     width: calc(100%/2);
+    color: white;
+    text-align: center;
+}
+
+.now-playing-cover {
+    padding: 0px 10px;
+}
+
+.now-playing-cover img {
+    max-height: 30px;
+    width: auto;
+}
+
+.now-playing-details {
+    font-size: 14px;
+    line-height: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.now-playing-options, .now-playing-details .song-name {
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+.controls {
+    padding: 10px 0px;
+    font-size: 28px;
+}
+
+.song-duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-duration p {
+    padding: 0px 12px;
+}
+
+.other-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-controls i {
+    color: white;
+}
+
+.play-bar, .volume-bar {
+    width: 430px;
+    height: 4px;
+    background-color: #5A5A5A;
+    margin: 0px 10px;
+}
+
+.volume-bar {
+    width: 86px;
+}
+
+.play-bar-inner, .volume-bar-inner {
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+
+.play-bar:hover .play-bar-inner, .volume-bar:hover .volume-bar-inner {
+    background-color: limegreen;
 }
 
 /*----------------
@@ -412,6 +484,14 @@ footer {
 
     .footer-big-col {
         width: calc(100% - 480px);
+    }
+
+    .now-playing-cover img {
+        max-height: 45px;
+    }
+
+    .now-playing-options {
+        display: in-line-block;
     }
 }
 
