@@ -69,7 +69,7 @@ header {
     flex-grow: 1;
     padding: 0px 20px;
     overflow-y: auto;
-    min-height: 80px;
+    min-height: 140px;
 }
 
 .playlist-title {
@@ -138,10 +138,6 @@ header {
     margin-right: 20px;
 }
 
-/*.account p {
-    display: inline-block;
-}*/
-
 .user img {
     height: 26px;
     background-color: #a3a3a3;
@@ -207,15 +203,37 @@ main {
     color: #A3A3A3;
 }
 
+.main-nav ul li a:hover {
+    color: white;
+}
+
+.line {
+    height: 2px;
+    width: 40px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.green-line {
+    background-color: limegreen;
+}
+
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     color: white;
     font-weight: 700px;
-    padding-bottom: 28px;
     padding-left: 10px;
 }
 
+.h2-subtitle {
+    font-size: 15px;
+    padding-left: 10px;
+    color: #A3A3A3;
+    font-weight: 700px;
+}
+
 .row {
+    padding-top: 28px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -230,6 +248,30 @@ h2 {
 
 .col .cover-img a img {
     width: 100%;
+    display: block;
+}
+
+.playlist-info .cover-img {
+    position: relative;
+}
+
+.playlist-info .cover-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.playlist-info .cover-img:hover .cover-overlay {
+    opacity: 1;
 }
 
 .playlist-details {
@@ -237,15 +279,20 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 22px;
     color: white;
-    padding: 6px 0px;
+    padding: 18px 2px 6px 2px;
 }
 
-h4 {
+.pl-details {
     color: #a3a3a3;
     font-size: 14px;
     padding-bottom: 30px;
+}
+
+.cover-img-circle {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /*----------------
@@ -301,8 +348,21 @@ footer {
         padding-left: 20px;
     }
 
-    .account p {
-    display: inline-block;
+    .download {
+        display: flex;
+    }
+
+    .download img {
+        margin-right: 12px;
+    }
+
+    .user {
+        display: flex;
+        line-height: 44px;
+    }
+
+    .user img {
+        margin-right: 8px;
     }
 
     main {
