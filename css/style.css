@@ -326,8 +326,18 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 10;
+    display: flex;
 }
 
+.footer-col {
+    background-color: blue;
+    width: calc(100%/4);
+}
+
+.footer-big-col {
+    background-color: blueviolet;
+    width: calc(100%/2);
+}
 
 /*----------------
     LAYOUT - RESPONSIVE
@@ -394,6 +404,14 @@ footer {
 @media screen and (min-width: 640px) {
     .col {
         width: calc(100%/4);
+    }
+
+    .footer-col {
+        width: 240px;
+    }
+
+    .footer-big-col {
+        width: calc(100% - 480px);
     }
 }
 
