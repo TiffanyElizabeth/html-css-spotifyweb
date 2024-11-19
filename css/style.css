@@ -242,6 +242,7 @@ h2 {
     color: white;
     font-weight: 700px;
     padding-left: 10px;
+    padding-top: 26px;
 }
 
 .h2-subtitle {
@@ -306,7 +307,7 @@ h3 {
 .pl-details {
     color: #a3a3a3;
     font-size: 14px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
 }
 
 .cover-img-circle {
