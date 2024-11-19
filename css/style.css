@@ -171,8 +171,6 @@ header {
     MAIN
 ------------------*/
 main {
-    overflow-y: auto;
-    background-color: paleturquoise;
     margin-left: 50px;
     margin-bottom: 90px;
 }
@@ -180,6 +178,7 @@ main {
 .container {
     background-color: #141922;
     padding: 20px 16px;
+    overflow-y: auto;
 }
 
 .upgrade-banner {
@@ -365,9 +364,18 @@ footer {
     color: #a3a3a3;
 }
 
+.song-name:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.fa-heart:hover, .fa-folder:hover {
+    color: white;
+}
+
 .controls {
     padding: 10px 0px;
-    font-size: 24px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -378,8 +386,12 @@ footer {
 }
 
 .fa-circle-play {
-    font-size: 34px;
+    font-size: 32px;
     padding: 0px 26px;
+}
+
+.fa-circle-play:hover {
+    font-size: 36px;
 }
 
 .fa-forward-step {
@@ -399,11 +411,15 @@ footer {
 .other-controls {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .other-controls i {
     color: white;
+}
+
+.fa-list, .fa-desktop {
+    padding-right: 8px;
 }
 
 .play-bar, .volume-bar {
@@ -511,7 +527,11 @@ footer {
     }
 
     .now-playing-options {
-        display: in-line-block;
+        display: block;
+    }
+
+    .fa-heart, .fa-folder {
+        padding-right: 6px;
     }
 
     .play-bar {
