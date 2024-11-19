@@ -319,7 +319,7 @@ h3 {
     FOOTER
 ------------------*/
 footer {
-    background-color: lavender;
+    background-color: #282828;
     height: 90px;
     width: 100%;
     position: fixed;
@@ -330,7 +330,7 @@ footer {
 }
 
 .footer-col {
-    background-color: blue;
+    /*background-color: blue;*/
     width: calc(100%/4);
     display: flex;
     align-items: center;
@@ -338,7 +338,7 @@ footer {
 }
 
 .footer-big-col {
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     width: calc(100%/2);
     color: white;
     text-align: center;
@@ -367,7 +367,23 @@ footer {
 
 .controls {
     padding: 10px 0px;
-    font-size: 28px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-backward-step {
+    padding-left: 20px;
+}
+
+.fa-circle-play {
+    font-size: 34px;
+    padding: 0px 26px;
+}
+
+.fa-forward-step {
+    padding-right: 20px;
 }
 
 .song-duration {
@@ -377,7 +393,7 @@ footer {
 }
 
 .song-duration p {
-    padding: 0px 12px;
+    font-size: 12px;
 }
 
 .other-controls {
@@ -391,7 +407,7 @@ footer {
 }
 
 .play-bar, .volume-bar {
-    width: 430px;
+    width: 130px;
     height: 4px;
     background-color: #5A5A5A;
     margin: 0px 10px;
@@ -470,6 +486,10 @@ footer {
     main {
         margin-left: 240px;
     }
+
+    .play-bar {
+        width: 150px;
+    }
 }    
 
 /* medium >= 640px */
@@ -493,6 +513,10 @@ footer {
     .now-playing-options {
         display: in-line-block;
     }
+
+    .play-bar {
+        width: 255px;
+    }
 }
 
 
@@ -500,5 +524,9 @@ footer {
 @media screen and (min-width: 879px) {
     .col {
         width: calc(100%/6);
+    }
+
+    .play-bar {
+        width: 430px;
     }
 }
